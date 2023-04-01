@@ -36,7 +36,7 @@ jobs:
           target_repo_url:
             $MIRROR_URL
           ssh_private_key:
-            ${{ secrets.GITHUB_TOKEN }}
+            ${{ secrets.EPITECH_SSH }}
       - uses: actions/setup-node@v3
         with:
           node-version: 12
