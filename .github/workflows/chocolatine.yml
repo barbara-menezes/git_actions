@@ -3,8 +3,8 @@
 name: CI
 
 env:
-  MIRROR_URL: "git@github.com:barbara-menezes/docker.git"
-  EXECUTABLES: "result/node_modules"
+  MIRROR_URL: git@github.com:barbara-menezes/docker.git
+  EXECUTABLES: result/node_modules
 
 # Controls when the workflow will run
 on:
@@ -34,7 +34,7 @@ jobs:
       - uses: pixta-dev/repository-mirroring-action@v1
         with:
           target_repo_url:
-            $MIRROR_URL
+            git@github.com:barbara-menezes/docker.git
           ssh_private_key:
             ${{ secrets.EPITECH_SSH }}
       - uses: actions/setup-node@v3
