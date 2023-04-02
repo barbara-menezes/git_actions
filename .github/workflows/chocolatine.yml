@@ -35,4 +35,4 @@ jobs:
        run: |
           ls -la
           pwd
-          check.sh ./src ./src
+          check.sh . .
