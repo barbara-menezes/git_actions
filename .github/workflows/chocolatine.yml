@@ -4,18 +4,17 @@ name: CI
 
 
 env:
-  MIRROR_URL: "git@github.com:barbara-menezes/docker.git"
-  EXECUTABLES: "result/node_modules"
+  MIRROR_URL: "git@github.com:barbara-menezes/My_Printf.git"
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches-ignore:    
-      - 'ga-ignore-'
+      - 'ga-ignore-*'
   pull_request:
     branches-ignore:    
-      - 'ga-ignore-'
+      - 'ga-ignore-*'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
