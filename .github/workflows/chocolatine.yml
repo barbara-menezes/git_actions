@@ -33,4 +33,4 @@ jobs:
       # Runs a set of commands using the runners shell
      - name: Run a multi-line script
        run: |
-          check.sh / /
+          check.sh /__w/git_actions/git_actions/src /__w/git_actions/git_actions/src
