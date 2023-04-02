@@ -35,14 +35,6 @@ jobs:
      - name: Run ls
        run: ls -la
      - name: Run code style
-       run: check.sh $(pwd) $(pwd)
-     - name: Run ls after check
-       run: ls -la
-     - name: Run code style
-       run: check.sh . .
-     - name: Run ls after check
-       run: ls -la
-     - name: Run ls after check
-       run: src src
-     - name: Run ls after check
-       run: ls -la
+       run: |
+        check.sh $(pwd) $(pwd)
+        cat coding-style-reports.log       
