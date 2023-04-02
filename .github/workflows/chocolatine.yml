@@ -35,4 +35,4 @@ jobs:
      - name: Run ls
        run: ls -la
      - name: Run code style
-       run: check.sh .src .src
+       run: check.sh $(pwd) $(pwd)
