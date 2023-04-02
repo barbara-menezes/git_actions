@@ -34,4 +34,4 @@ jobs:
      - name: Run a multi-line script
        run: |
           ls -la
-          check.sh $(pwd) $(pwd)
+          check.sh src src
